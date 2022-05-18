@@ -11,7 +11,7 @@ chrome_options = webdriver.ChromeOptions()
  
 prefs = {"profile.default_content_setting_values.notifications": 2}
 chrome_options.add_experimental_option("prefs", prefs)
-browser = webdriver.Chrome("chromedriver.exe")
+browser = webdriver.Chrome("D:\Wisher\chromedriver.exe")
 print("initiated test browser")
 
 browser.get("https://www.facebook.com/")
@@ -19,7 +19,7 @@ print("opened facebook.com")
 
 username = "9001388975"
 
-with open('.env', 'r') as source:
+with open('D:\Wisher\.env', 'r') as source:
     password = source.read().replace('\n', '')
 
 print("Entering")
